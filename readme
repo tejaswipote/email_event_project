@@ -1,0 +1,8 @@
+To Create Employee:
+
+{"name": "Tejaswi Pote", "email": "tejaspote20@gmail.com", "birth_date": "2000-08-18", "joining_date": "2021-07-18"}
+
+To add template:
+from application.models import Template
+Template.objects.create(**{"event_type":1,"template":"Happy Birthday {}"})
+Template.objects.create(**{"event_type":2,"template":"Happy Work anniversary {}"})
